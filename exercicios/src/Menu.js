@@ -3,10 +3,18 @@ import { createDrawerNavigator } from "react-navigation";
 import { Inverter, MegaSena } from "./components/Multi";
 import Contador from "./components/Contador";
 import ParImpar from "./components/ParImpar";
+import Plataformas from "./components/Plataformas";
 import Simples from "./components/Simples";
+import ValidarProps from "./components/ValidarProps";
 
 export default createDrawerNavigator(
   {
+    ValidarProps: {
+      screen: () => <ValidarProps ano={10} />
+    },
+    Plataformas: {
+      screen: Plataformas
+    },
     Contador: {
       screen: () => <Contador numeroInicial={100000} />
     },
