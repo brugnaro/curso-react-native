@@ -1,4 +1,4 @@
 import React from "react";
-import App from "./src/App";
+import Menu from "./src/Menu";
 
-export default () => <App />;
+export default () => <Menu />;
