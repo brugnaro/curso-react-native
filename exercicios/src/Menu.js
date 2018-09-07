@@ -6,9 +6,17 @@ import ParImpar from "./components/ParImpar";
 import Plataformas from "./components/Plataformas";
 import Simples from "./components/Simples";
 import ValidarProps from "./components/ValidarProps";
+import Evento from "./components/Evento";
+import Avo from "./components/ComunicacaoDireta";
 
 export default createDrawerNavigator(
   {
+    Avo: {
+      screen: () => <Avo nome="Joao" sobrenome="Silva" />
+    },
+    Evento: {
+      screen: Evento
+    },
     ValidarProps: {
       screen: () => <ValidarProps ano={10} />
     },
