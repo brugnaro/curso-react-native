@@ -8,9 +8,14 @@ import Simples from "./components/Simples";
 import ValidarProps from "./components/ValidarProps";
 import Evento from "./components/Evento";
 import Avo from "./components/ComunicacaoDireta";
+import TextoSincronizado from "./components/ComunicacaoIndireta";
 
 export default createDrawerNavigator(
   {
+    TextoSincronizado: {
+      screen: TextoSincronizado,
+      navigationOptions: { title: "TextoSincronizado" }
+    },
     Avo: {
       screen: () => <Avo nome="Joao" sobrenome="Silva" />
     },
